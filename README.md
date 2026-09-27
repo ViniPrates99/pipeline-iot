@@ -73,6 +73,7 @@ streamlit run src/dashboard.py
 ## 📸 Capturas de Tela do Dashboard
 
 ### 1. Média de Temperatura por Dispositivo
+<<<<<<< HEAD
 ![Média por Dispositivo](docs/grafico1.png)
 
 ### 2. Leituras por Hora do Dia
@@ -80,3 +81,12 @@ streamlit run src/dashboard.py
 
 ### 3. Temperaturas Máximas e Mínimas Diárias
 ![Máximas e Mínimas](docs/grafico3.png)
+=======
+![Média por Dispositivo](docs/Grafico1.PNG)
+
+### 2. Leituras por Hora do Dia
+![Leituras por Hora](docs/Grafico2.PNG)
+
+### 3. Temperaturas Máximas e Mínimas Diárias
+![Máximas e Mínimas](docs/Grafico3.PNG)
+>>>>>>> 2028dd02b9cdabcbf0be723037c6493c5ffcb45a
