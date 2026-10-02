@@ -9,7 +9,7 @@ def processar_dados():
     df = pd.read_csv('data/IOT-temp.csv') 
 
     df = df.rename(columns={
-        'out/in': 'device_id',  # Substituímos o ID único pela indicação de sensor Interno/Externo
+        'out/in': 'device_id',  # substituição do ID único pela indicação de sensor Interno/Externo
         'temp': 'temperature', 
         'noted_date': 'timestamp'
     })
@@ -19,7 +19,7 @@ def processar_dados():
 
     print("2. Limpando estrutura antiga e inserindo novos dados no PostgreSQL...")
     
-    # --- SOLUÇÃO: Força a exclusão da tabela antiga e de suas dependências (Views)
+    #Força a exclusão da tabela antiga e de suas dependências
     with engine.connect() as conn:
         conn.execute(text("DROP TABLE IF EXISTS temperature_readings CASCADE;"))
         conn.commit()
